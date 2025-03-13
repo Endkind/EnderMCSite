@@ -1,0 +1,18 @@
+.table {
+    th,
+    td {
+        @apply p-2 text-left border-b border-zinc-300 dark:border-zinc-500;
+    }
+
+    &-striped {
+        tbody tr:nth-child(odd) {
+            @apply bg-zinc-200 dark:bg-dark-surface;
+        }
+
+        &-columns {
+            td:nth-child(even), th:nth-child(even) {
+                @apply bg-zinc-200 dark:bg-dark-surface;
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@use "../css/JetBrains_Mono.css";
+@use "bootstrap-icons/font/bootstrap-icons.css";
+
+@use "./components";
+@use "./general";
+@use "./variables";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tooltip {
+  @apply absolute bg-gray-800 text-white px-2 py-1 rounded text-sm opacity-0 transition-opacity duration-300 pointer-events-none whitespace-nowrap;
+}

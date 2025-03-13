@@ -1,0 +1,104 @@
+.btn {
+    @apply py-2 px-4 rounded w-auto whitespace-nowrap transition-ease-in-out;
+
+    &-primary {
+        @apply bg-blue-600 text-white hover:bg-blue-700;
+    }
+
+    &-secondary {
+        @apply bg-gray-500 text-white hover:bg-gray-600;
+    }
+
+    &-success {
+        @apply bg-green-600 text-white hover:bg-green-700;
+    }
+
+    &-danger {
+        @apply bg-red-600 text-white hover:bg-red-700;
+    }
+
+    &-warning {
+        @apply bg-yellow-600 text-black hover:bg-yellow-600;
+    }
+
+    &-info {
+        @apply bg-cyan-500 text-black hover:bg-cyan-600;
+    }
+
+    &-light {
+        @apply bg-gray-100 text-black hover:bg-gray-300;
+    }
+
+    &-dark {
+        @apply bg-dark-background text-white hover:bg-dark-border;
+    }
+
+    &-outline {
+        &-primary {
+            @apply border border-blue-600 text-blue-600 hover:border-blue-700 hover:bg-blue-700 hover:text-white;
+        }
+
+        &-secondary {
+            @apply border border-gray-500 text-gray-500 hover:border-gray-600 hover:bg-gray-600 hover:text-white;
+        }
+
+        &-success {
+            @apply border border-green-600 text-green-600 hover:border-green-700 hover:bg-green-700 hover:text-white;
+        }
+
+        &-danger {
+            @apply border border-red-600 text-red-600 hover:border-red-700 hover:bg-red-700 hover:text-white;
+        }
+
+        &-warning {
+            @apply border border-yellow-600 text-yellow-600 hover:border-yellow-600 hover:bg-yellow-600 hover:text-black;
+        }
+
+        &-info {
+            @apply border border-cyan-500 text-cyan-500 hover:border-cyan-600 hover:bg-cyan-600 hover:text-black;
+        }
+
+        &-light {
+            @apply border border-gray-100 text-gray-100 hover:border-gray-300 hover:bg-gray-300 hover:text-black;
+        }
+
+        &-dark {
+            @apply border border-dark-background text-dark-background hover:border-dark-border hover:bg-dark-border hover:text-white;
+        }
+    }
+
+    &-lg {
+        @apply text-lg py-3 px-6;
+    }
+
+    &-sm {
+        @apply text-sm py-1 px-2;
+    }
+
+    &:disabled {
+        filter: brightness(75%);
+        cursor: not-allowed;
+        pointer-events: none;
+        transition: none;
+    }
+
+    &-card {
+        @apply rounded w-auto transition-ease-in-out flex flex-col items-center text-center border dark:border-zinc-400 p-4 border-zinc-600 hover:dark:bg-dark-surface hover:bg-gray-300 hover:dark:border-dark-surface hover:border-gray-300;
+    }
+
+    &-navbar {
+        @apply text-black dark:bg-dark-surface dark:text-white hover:bg-zinc-400;
+
+        &:hover:is(.dark *) {
+            background-color: hsl(0, 0%, 21%);
+        }
+
+        &-current {
+            @apply bg-neutral-400 text-black dark:text-white;
+        }
+
+        &-current:is(.dark *) {
+            background-color: hsl(0, 0%, 13%);
+        }
+    }
+}

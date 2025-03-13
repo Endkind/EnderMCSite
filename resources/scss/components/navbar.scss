@@ -1,0 +1,22 @@
+$dark-current: hsl(0, 0%, 13%);
+$dark-tab-hover: hsl(0, 0%, 21%);
+
+.btn-navbar {
+    @apply text-black dark:bg-dark-surface dark:text-white;
+
+    &:hover:is(.dark *) {
+        background-color: $dark-tab-hover;
+    }
+
+    &:hover {
+        @apply bg-zinc-400
+    }
+
+    &-current:is(.dark *) {
+        background-color: $dark-current;
+    }
+
+    &-current {
+        @apply bg-neutral-400 text-black dark:text-white;
+    }
+}

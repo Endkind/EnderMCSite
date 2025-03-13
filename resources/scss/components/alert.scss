@@ -1,0 +1,107 @@
+.alert {
+    @apply rounded-lg p-4 border;
+
+    &-primary {
+        //@apply bg-blue-950 border-blue-500 text-blue-500;
+        background-color: #cfe2ff;
+        border-color: #9ec5fe;
+        color: #052c65;
+
+        &:is(.dark *) {
+            background-color: #031633;
+            border-color: #084298;
+            color: #3a9afe;
+        }
+    }
+
+    &-secondary {
+        //@apply bg-zinc-900 border-zinc-400 text-zinc-400;
+        background-color: #e2e3e5;
+        border-color: #c4c8cb;
+        color: #2b2f32;
+
+        &:is(.dark *) {
+            background-color: #161719;
+            border-color: #41464b;
+            color: #a7acb1;
+        }
+    }
+
+    &-success {
+        //@apply bg-emerald-950 border-emerald-500 text-emerald-500;
+        background-color: #d1e7dd;
+        border-color: #a3cfbb;
+        color: #0a3622;
+
+        &:is(.dark *) {
+            background-color: #051b11;
+            border-color: #0f5132;
+            color: #75b798;
+        }
+    }
+
+    &-danger {
+        //@apply bg-red-950 border-red-400 text-red-400;
+        background-color: #f8d7da;
+        border-color: #f1aeb5;
+        color: #58151c;
+
+        &:is(.dark *) {
+            background-color: #2c0b0e;
+            border-color: #842029;
+            color: #ea868f;
+        }
+    }
+
+    &-warning {
+        //@apply bg-yellow-900 border-yellow-400 text-yellow-400;
+        background-color: #fff3cd;
+        border-color: #ffe69c;
+        color: #664d03;
+
+        &:is(.dark *) {
+            background-color: #332701;
+            border-color: #997404;
+            color: #ffda6a;
+        }
+    }
+
+    &-info {
+        //@apply bg-cyan-950 border-cyan-400 text-cyan-400;
+        background-color: #cff4fc;
+        border-color: #9eeaf9;
+        color: #055160;
+
+        &:is(.dark *) {
+            background-color: #032830;
+            border-color: #087990;
+            color: #6edff6;
+        }
+    }
+
+    &-light {
+        //@apply bg-zinc-500 border-zinc-400 text-white;
+        background-color: #fcfcfd;
+        border-color: #e9ecef;
+        color: #495057;
+
+        &:is(.dark *) {
+            background-color: #343a40;
+            border-color: #495057;
+            color: #f8f9fa;
+        }
+    }
+
+    &-dark {
+        //@apply bg-zinc-900 border-zinc-500 text-zinc-500;
+        background-color: #ced4da;
+        border-color: #adb5bd;
+        color: #495057;
+
+        &:is(.dark *) {
+            background-color: #1a1d20;
+            border-color: #343a40;
+            color: #dee2e6;
+        }
+    }
+}

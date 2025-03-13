@@ -1,0 +1,1 @@
+<div class="flex flex-grow border-t border-gray-500"></div>
